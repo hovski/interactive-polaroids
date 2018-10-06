@@ -9,6 +9,7 @@ html {
   padding: 10px;
   width: 250px;
   position: absolute;
+  transition: all 200ms linear;
 
   background-color: #fff;
   border-radius: 4px;
@@ -27,31 +28,31 @@ html {
   left: 50%;
   bottom: 1em;
   transform: translateX(-50%);
-
 }
 
 figure:first-child {
-  top: 8em;
+  top: 7em;
   left: 30%;
   transform: rotate(-15deg);
   z-index: 2;
 }
 
 figure:nth-child(2) {
-  top: 11em;
+  top: 9em;
   left: 30%;
-  transform: rotate(10deg);
+  transform: rotate(6deg);
   z-index: 3;
 }
 
-figure:last-child {
-  top: 10em;
+figure:nth-child(3) {
+  top: 6em;
   left: 40%;
-  transform: rotate(25deg);
+  transform: rotate(34deg);
   z-index: 1;
 }
 
-figure:hover {
+.polaroid:hover {
   transform: rotate(0);
   z-index: 5;
+  box-shadow: 10px 10px 40px #000;
 }
